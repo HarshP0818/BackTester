@@ -1,0 +1,438 @@
+2026-06-15 01:23:17,948 config INFO: Loaded configuration from /app/config.yaml
+2026-06-15 01:23:17,948 __main__ INFO: Loaded configuration from config.yaml
+2026-06-15 01:23:17,948 __main__ INFO: Starting backtesting workflow for AAPL from 2020-01-01 to 2021-01-01
+2026-06-15 01:23:17,949 __main__ INFO: Using position sizing strategy: fixed_percentage
+2026-06-15 01:23:17,949 __main__ INFO: Initial cash: $100,000.00
+2026-06-15 01:23:17,949 __main__ INFO: Loading data...
+2026-06-15 01:23:18,943 DataLoader.dataLoader INFO: Loaded 253 rows for AAPL
+2026-06-15 01:23:18,944 __main__ INFO: Cleaning data...
+2026-06-15 01:23:18,948 __main__ INFO: Storing data...
+2026-06-15 01:23:18,953 DataStorage.dataStorage INFO: Connecting to database stock_data at db
+2026-06-15 01:23:18,977 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker
+2026-06-15 01:23:18,978 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date
+2026-06-15 01:23:18,978 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker_date
+2026-06-15 01:23:18,978 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date_ticker
+2026-06-15 01:23:18,992 DataStorage.dataStorage INFO: Stored 253 rows for AAPL
+2026-06-15 01:23:18,992 __main__ INFO: Initializing strategy: moving_average_crossover
+2026-06-15 01:23:18,992 BacktestingEngine.strategy INFO: Generating signals with fast_window=20 slow_window=50
+2026-06-15 01:23:18,994 BacktestingEngine.strategy INFO: Generated 147 buy signals and 57 sell signals
+2026-06-15 01:23:18,994 __main__ INFO: Generated 204 non-zero signals
+2026-06-15 01:23:18,995 BacktestingEngine.positionSizer INFO: Initialized FixedPercentagePositionSizer with 2.0% risk
+2026-06-15 01:23:18,995 __main__ INFO: Running backtest...
+2026-06-15 01:23:18,995 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=FixedPercentagePositionSizer, commission=0.1%, slippage=0.05%
+2026-06-15 01:23:18,995 BacktestingEngine.backtestEngine INFO: Starting backtest with 253 rows and initial cash 100000
+2026-06-15 01:23:19,003 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 129696.26, Trades executed: 1
+2026-06-15 01:23:19,003 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-15 01:23:19,003 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=29.70%, sharpe=2.04, max_dd=-15.33%, win_rate=100.00%
+2026-06-15 01:23:19,003 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:23:19,004 __main__ INFO: Total Return: 29.70%
+2026-06-15 01:23:19,004 __main__ INFO: Sharpe Ratio: 2.04
+2026-06-15 01:23:19,004 __main__ INFO: Max Drawdown: -15.33%
+2026-06-15 01:23:19,004 __main__ INFO: Win Rate: 100.00%
+2026-06-15 01:23:19,004 __main__ INFO: Profit Factor: 0.00
+2026-06-15 01:23:19,005 __main__ INFO: Total Trades: 1
+2026-06-15 01:23:28,183 config INFO: Loaded configuration from /app/config.yaml
+2026-06-15 01:23:28,184 __main__ INFO: Loaded configuration from config.yaml
+2026-06-15 01:23:28,184 __main__ INFO: Starting backtesting workflow for AAPL from 2020-01-01 to 2021-01-01
+2026-06-15 01:23:28,184 __main__ INFO: Using position sizing strategy: fixed_percentage
+2026-06-15 01:23:28,184 __main__ INFO: Initial cash: $100,000.00
+2026-06-15 01:23:28,184 __main__ INFO: Loading data...
+2026-06-15 01:23:28,667 DataLoader.dataLoader INFO: Loaded 253 rows for AAPL
+2026-06-15 01:23:28,668 __main__ INFO: Cleaning data...
+2026-06-15 01:23:28,672 __main__ INFO: Storing data...
+2026-06-15 01:23:28,678 DataStorage.dataStorage INFO: Connecting to database stock_data at db
+2026-06-15 01:23:28,693 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker
+2026-06-15 01:23:28,694 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date
+2026-06-15 01:23:28,694 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker_date
+2026-06-15 01:23:28,695 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date_ticker
+2026-06-15 01:23:28,707 DataStorage.dataStorage INFO: Stored 253 rows for AAPL
+2026-06-15 01:23:28,708 __main__ INFO: Initializing strategy: moving_average_crossover
+2026-06-15 01:23:28,708 BacktestingEngine.strategy INFO: Generating signals with fast_window=20 slow_window=50
+2026-06-15 01:23:28,711 BacktestingEngine.strategy INFO: Generated 147 buy signals and 57 sell signals
+2026-06-15 01:23:28,711 __main__ INFO: Generated 204 non-zero signals
+2026-06-15 01:23:28,712 BacktestingEngine.positionSizer INFO: Initialized FixedPercentagePositionSizer with 2.0% risk
+2026-06-15 01:23:28,712 __main__ INFO: Running backtest...
+2026-06-15 01:23:28,712 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=FixedPercentagePositionSizer, commission=0.1%, slippage=0.05%
+2026-06-15 01:23:28,713 BacktestingEngine.backtestEngine INFO: Starting backtest with 253 rows and initial cash 100000
+2026-06-15 01:23:28,720 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 129696.28, Trades executed: 1
+2026-06-15 01:23:28,721 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-15 01:23:28,721 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=29.70%, sharpe=2.04, max_dd=-15.33%, win_rate=100.00%
+2026-06-15 01:23:28,721 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:23:28,721 __main__ INFO: Total Return: 29.70%
+2026-06-15 01:23:28,722 __main__ INFO: Sharpe Ratio: 2.04
+2026-06-15 01:23:28,722 __main__ INFO: Max Drawdown: -15.33%
+2026-06-15 01:23:28,722 __main__ INFO: Win Rate: 100.00%
+2026-06-15 01:23:28,722 __main__ INFO: Profit Factor: 0.00
+2026-06-15 01:23:28,723 __main__ INFO: Total Trades: 1
+2026-06-15 01:31:18,669 config INFO: Loaded configuration from /app/config.yaml
+2026-06-15 01:31:18,669 __main__ INFO: Loaded configuration from config.yaml
+2026-06-15 01:31:18,669 __main__ INFO: Starting backtesting workflow for AAPL from 2020-01-01 to 2021-01-01
+2026-06-15 01:31:18,669 __main__ INFO: Using position sizing strategy: fixed_percentage
+2026-06-15 01:31:18,670 __main__ INFO: Initial cash: $100,000.00
+2026-06-15 01:31:18,670 __main__ INFO: Loading data...
+2026-06-15 01:31:19,577 DataLoader.dataLoader INFO: Loaded 253 rows for AAPL
+2026-06-15 01:31:19,578 __main__ INFO: Cleaning data...
+2026-06-15 01:31:19,582 __main__ INFO: Storing data...
+2026-06-15 01:31:19,588 DataStorage.dataStorage INFO: Connecting to database stock_data at db
+2026-06-15 01:31:19,602 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker
+2026-06-15 01:31:19,602 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date
+2026-06-15 01:31:19,603 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker_date
+2026-06-15 01:31:19,603 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date_ticker
+2026-06-15 01:31:19,612 DataStorage.dataStorage INFO: Stored 253 rows for AAPL
+2026-06-15 01:31:19,612 __main__ INFO: Initializing strategy: moving_average_crossover
+2026-06-15 01:31:19,613 BacktestingEngine.strategy INFO: Generating signals with fast_window=20 slow_window=50
+2026-06-15 01:31:19,614 BacktestingEngine.strategy INFO: Generated 147 buy signals and 57 sell signals
+2026-06-15 01:31:19,615 __main__ INFO: Generated 204 non-zero signals
+2026-06-15 01:31:19,615 BacktestingEngine.positionSizer INFO: Initialized FixedPercentagePositionSizer with 2.0% risk
+2026-06-15 01:31:19,615 __main__ INFO: Running backtest...
+2026-06-15 01:31:19,615 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=FixedPercentagePositionSizer, commission=0.1%, slippage=0.05%
+2026-06-15 01:31:19,616 BacktestingEngine.backtestEngine INFO: Starting backtest with 253 rows and initial cash 100000
+2026-06-15 01:31:19,624 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 129696.25, Trades executed: 1
+2026-06-15 01:31:19,625 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-15 01:31:19,625 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=29.70%, sharpe=2.04, max_dd=-15.33%, win_rate=100.00%
+2026-06-15 01:31:19,625 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:31:19,625 __main__ INFO: Total Return: 29.70%
+2026-06-15 01:31:19,626 __main__ INFO: Sharpe Ratio: 2.04
+2026-06-15 01:31:19,626 __main__ INFO: Max Drawdown: -15.33%
+2026-06-15 01:31:19,626 __main__ INFO: Win Rate: 100.00%
+2026-06-15 01:31:19,626 __main__ INFO: Profit Factor: 0.00
+2026-06-15 01:31:19,627 __main__ INFO: Total Trades: 1
+2026-06-15 01:31:36,964 config INFO: Loaded configuration from /app/config_conservative.yaml
+2026-06-15 01:31:36,965 __main__ INFO: Loaded configuration from config_conservative.yaml
+2026-06-15 01:31:36,965 __main__ INFO: Starting backtesting workflow for MSFT from 2019-01-01 to 2021-12-31
+2026-06-15 01:31:36,965 __main__ INFO: Using position sizing strategy: fixed_shares
+2026-06-15 01:31:36,965 __main__ INFO: Initial cash: $50,000.00
+2026-06-15 01:31:36,966 __main__ INFO: Loading data...
+2026-06-15 01:31:37,588 DataLoader.dataLoader INFO: Loaded 756 rows for MSFT
+2026-06-15 01:31:37,589 __main__ INFO: Cleaning data...
+2026-06-15 01:31:37,593 __main__ INFO: Storing data...
+2026-06-15 01:31:37,599 DataStorage.dataStorage INFO: Connecting to database stock_data at db
+2026-06-15 01:31:37,617 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker
+2026-06-15 01:31:37,617 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date
+2026-06-15 01:31:37,618 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker_date
+2026-06-15 01:31:37,618 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date_ticker
+2026-06-15 01:31:37,643 DataStorage.dataStorage INFO: Stored 756 rows for MSFT
+2026-06-15 01:31:37,646 __main__ INFO: Initializing strategy: moving_average_crossover
+2026-06-15 01:31:37,646 BacktestingEngine.strategy INFO: Generating signals with fast_window=20 slow_window=50
+2026-06-15 01:31:37,649 BacktestingEngine.strategy INFO: Generated 607 buy signals and 100 sell signals
+2026-06-15 01:31:37,649 __main__ INFO: Generated 707 non-zero signals
+2026-06-15 01:31:37,649 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 10 shares
+2026-06-15 01:31:37,650 __main__ INFO: Running backtest...
+2026-06-15 01:31:37,650 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=50000, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%
+2026-06-15 01:31:37,650 BacktestingEngine.backtestEngine INFO: Starting backtest with 756 rows and initial cash 50000
+2026-06-15 01:31:37,679 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 51178.75, Trades executed: 8
+2026-06-15 01:31:37,679 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=2.36%, sharpe=0.82, max_dd=-1.00%, win_rate=75.00%
+2026-06-15 01:31:37,680 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:31:37,680 __main__ INFO: Total Return: 2.36%
+2026-06-15 01:31:37,680 __main__ INFO: Sharpe Ratio: 0.82
+2026-06-15 01:31:37,681 __main__ INFO: Max Drawdown: -1.00%
+2026-06-15 01:31:37,681 __main__ INFO: Win Rate: 75.00%
+2026-06-15 01:31:37,682 __main__ INFO: Profit Factor: 57.15
+2026-06-15 01:31:37,682 __main__ INFO: Total Trades: 8
+2026-06-15 01:32:29,117 config INFO: Loaded configuration from /app/config_volatility.yaml
+2026-06-15 01:32:29,117 __main__ INFO: Loaded configuration from config_volatility.yaml
+2026-06-15 01:32:29,117 __main__ INFO: Starting backtesting workflow for TSLA from 2019-06-01 to 2021-12-31
+2026-06-15 01:32:29,118 __main__ INFO: Using position sizing strategy: volatility_adjusted
+2026-06-15 01:32:29,118 __main__ INFO: Initial cash: $100,000.00
+2026-06-15 01:32:29,118 __main__ INFO: Loading data...
+2026-06-15 01:32:30,298 DataLoader.dataLoader INFO: Loaded 652 rows for TSLA
+2026-06-15 01:32:30,298 __main__ INFO: Cleaning data...
+2026-06-15 01:32:30,302 __main__ INFO: Storing data...
+2026-06-15 01:32:30,308 DataStorage.dataStorage INFO: Connecting to database stock_data at db
+2026-06-15 01:32:30,319 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker
+2026-06-15 01:32:30,319 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date
+2026-06-15 01:32:30,320 DataStorage.dataStorage INFO: Created index: idx_stock_prices_ticker_date
+2026-06-15 01:32:30,320 DataStorage.dataStorage INFO: Created index: idx_stock_prices_date_ticker
+2026-06-15 01:32:30,346 DataStorage.dataStorage INFO: Stored 652 rows for TSLA
+2026-06-15 01:32:30,348 __main__ INFO: Initializing strategy: moving_average_crossover
+2026-06-15 01:32:30,349 BacktestingEngine.strategy INFO: Generating signals with fast_window=20 slow_window=50
+2026-06-15 01:32:30,350 BacktestingEngine.strategy INFO: Generated 468 buy signals and 135 sell signals
+2026-06-15 01:32:30,351 __main__ INFO: Generated 603 non-zero signals
+2026-06-15 01:32:30,351 BacktestingEngine.positionSizer INFO: Initialized VolatilityAdjustedPositionSizer with base 2.0%
+2026-06-15 01:32:30,351 __main__ INFO: Running backtest...
+2026-06-15 01:32:30,352 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=VolatilityAdjustedPositionSizer, commission=0.1%, slippage=0.05%
+2026-06-15 01:32:30,352 BacktestingEngine.backtestEngine INFO: Starting backtest with 652 rows and initial cash 100000
+2026-06-15 01:32:30,371 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 252962.55, Trades executed: 6
+2026-06-15 01:32:30,372 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=152.96%, sharpe=1.23, max_dd=-95.18%, win_rate=66.67%
+2026-06-15 01:32:30,372 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:32:30,373 __main__ INFO: Total Return: 152.96%
+2026-06-15 01:32:30,373 __main__ INFO: Sharpe Ratio: 1.23
+2026-06-15 01:32:30,373 __main__ INFO: Max Drawdown: -95.18%
+2026-06-15 01:32:30,374 __main__ INFO: Win Rate: 66.67%
+2026-06-15 01:32:30,374 __main__ INFO: Profit Factor: 8.23
+2026-06-15 01:32:30,374 __main__ INFO: Total Trades: 6
+2026-06-14 20:48:56,344 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-14 20:48:56,345 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-14 20:48:56,346 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-14 20:48:56,347 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-14 20:48:56,348 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-14 20:48:56,348 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-14 20:48:56,620 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-14 20:48:56,622 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-14 20:49:24,162 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-14 20:49:24,162 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-14 20:49:24,162 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-14 20:49:24,163 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-14 20:49:24,163 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-14 20:49:24,163 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-14 20:49:24,419 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-14 20:49:24,421 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-14 20:52:43,376 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-14 20:52:43,376 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-14 20:52:43,376 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-14 20:52:43,377 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-14 20:52:43,377 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-14 20:52:43,377 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-14 20:53:01,094 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-14 20:53:01,095 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-14 20:53:01,095 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-14 20:53:01,095 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-14 20:53:01,096 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-14 20:53:01,096 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-14 20:53:01,111 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-14 20:53:01,113 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-15 01:54:33,645 config INFO: Loaded configuration from /app/config_volatility.yaml
+2026-06-15 01:54:33,646 __main__ INFO: Loaded configuration from config_volatility.yaml
+2026-06-15 01:54:33,646 __main__ INFO: Starting backtesting workflow for TSLA from 2019-06-01 to 2021-12-31
+2026-06-15 01:54:33,646 __main__ INFO: Using position sizing strategy: volatility_adjusted
+2026-06-15 01:54:33,647 __main__ INFO: Initial cash: $100,000.00
+2026-06-15 01:54:33,647 __main__ INFO: Loading data...
+2026-06-15 01:54:34,596 DataLoader.dataLoader INFO: Loaded 652 rows for TSLA
+2026-06-15 01:54:34,596 __main__ INFO: Cleaning data...
+2026-06-15 01:54:34,602 __main__ INFO: Storing data...
+2026-06-15 01:54:34,608 DataStorage.dataStorage INFO: Initializing PostgreSQL connection pool: 1-5
+2026-06-15 01:54:34,636 DataStorage.dataStorage INFO: Schema verified and indexes created
+2026-06-15 01:54:34,645 DataStorage.dataStorage WARNING: Database storage failed for TSLA (continuing without storage): column "updated_at" of relation "stock_prices" does not exist
+LINE 11:                                 updated_at = NOW()
+                                         ^
+Traceback (most recent call last):
+  File "/app/DataStorage/dataStorage.py", line 157, in store_data
+    execute_values(
+  File "/usr/local/lib/python3.12/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "updated_at" of relation "stock_prices" does not exist
+LINE 11:                                 updated_at = NOW()
+                                         ^
+
+2026-06-15 01:54:34,651 DataStorage.dataStorage INFO: Closing PostgreSQL connection pool
+2026-06-15 01:54:34,652 __main__ INFO: Initialized strategy: moving_average_crossover
+2026-06-15 01:54:34,652 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=20 slow_window=50
+2026-06-15 01:54:34,655 BacktestingEngine.strategy INFO: Generated 468 buy signals and 135 sell signals
+2026-06-15 01:54:34,655 __main__ INFO: Generated 603 non-zero signals
+2026-06-15 01:54:34,656 BacktestingEngine.positionSizer INFO: Initialized VolatilityAdjustedPositionSizer with base 2.0%
+2026-06-15 01:54:34,656 __main__ INFO: Running backtest...
+2026-06-15 01:54:34,656 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=VolatilityAdjustedPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-15 01:54:34,657 BacktestingEngine.backtestEngine INFO: Starting backtest with 652 rows and initial cash 100000
+2026-06-15 01:54:34,680 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 191141.33, Trades executed: 72
+2026-06-15 01:54:34,681 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=91.14%, sharpe=1.25, max_dd=-46.96%, win_rate=48.61%
+2026-06-15 01:54:34,682 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:54:34,682 __main__ INFO: Total Return: 91.14%
+2026-06-15 01:54:34,682 __main__ INFO: Sharpe Ratio: 1.25
+2026-06-15 01:54:34,683 __main__ INFO: Max Drawdown: -46.96%
+2026-06-15 01:54:34,683 __main__ INFO: Win Rate: 48.61%
+2026-06-15 01:54:34,683 __main__ INFO: Profit Factor: 1.47
+2026-06-15 01:54:34,683 __main__ INFO: Total Trades: 72
+2026-06-15 01:55:11,597 config INFO: Loaded configuration from /app/config_volatility.yaml
+2026-06-15 01:55:11,597 __main__ INFO: Loaded configuration from config_volatility.yaml
+2026-06-15 01:55:11,598 __main__ INFO: Starting backtesting workflow for TSLA from 2019-06-01 to 2021-12-31
+2026-06-15 01:55:11,598 __main__ INFO: Using position sizing strategy: volatility_adjusted
+2026-06-15 01:55:11,598 __main__ INFO: Initial cash: $100,000.00
+2026-06-15 01:55:11,599 __main__ INFO: Loading data...
+2026-06-15 01:55:12,207 DataLoader.dataLoader INFO: Loaded 652 rows for TSLA
+2026-06-15 01:55:12,208 __main__ INFO: Cleaning data...
+2026-06-15 01:55:12,212 __main__ INFO: Storing data...
+2026-06-15 01:55:12,219 DataStorage.dataStorage INFO: Initializing PostgreSQL connection pool: 1-5
+2026-06-15 01:55:12,237 DataStorage.dataStorage INFO: Schema verified and indexes created
+2026-06-15 01:55:12,268 DataStorage.dataStorage INFO: Stored 652 rows for TSLA
+2026-06-15 01:55:12,269 DataStorage.dataStorage INFO: Closing PostgreSQL connection pool
+2026-06-15 01:55:12,269 __main__ INFO: Initialized strategy: moving_average_crossover
+2026-06-15 01:55:12,270 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=20 slow_window=50
+2026-06-15 01:55:12,272 BacktestingEngine.strategy INFO: Generated 468 buy signals and 135 sell signals
+2026-06-15 01:55:12,272 __main__ INFO: Generated 603 non-zero signals
+2026-06-15 01:55:12,273 BacktestingEngine.positionSizer INFO: Initialized VolatilityAdjustedPositionSizer with base 2.0%
+2026-06-15 01:55:12,273 __main__ INFO: Running backtest...
+2026-06-15 01:55:12,273 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=VolatilityAdjustedPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-15 01:55:12,274 BacktestingEngine.backtestEngine INFO: Starting backtest with 652 rows and initial cash 100000
+2026-06-15 01:55:12,297 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 191141.33, Trades executed: 72
+2026-06-15 01:55:12,298 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=91.14%, sharpe=1.25, max_dd=-46.96%, win_rate=48.61%
+2026-06-15 01:55:12,298 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-15 01:55:12,299 __main__ INFO: Total Return: 91.14%
+2026-06-15 01:55:12,299 __main__ INFO: Sharpe Ratio: 1.25
+2026-06-15 01:55:12,300 __main__ INFO: Max Drawdown: -46.96%
+2026-06-15 01:55:12,300 __main__ INFO: Win Rate: 48.61%
+2026-06-15 01:55:12,301 __main__ INFO: Profit Factor: 1.47
+2026-06-15 01:55:12,301 __main__ INFO: Total Trades: 72
+2026-06-14 21:00:45,877 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-14 21:00:45,877 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-14 21:00:45,877 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-14 21:00:45,878 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-14 21:00:45,878 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-14 21:00:45,878 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-14 21:00:45,893 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-14 21:00:45,895 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-14 21:06:12,594 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-14 21:06:12,594 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-14 21:06:12,594 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-14 21:06:12,595 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-14 21:06:12,595 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-14 21:06:12,595 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-14 21:06:12,610 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-14 21:06:12,611 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-26 17:32:47,675 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-26 17:32:47,675 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-26 17:32:47,676 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-26 17:32:47,677 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-26 17:32:47,678 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-26 17:32:47,678 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-26 17:32:47,697 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-26 17:32:47,699 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-26 17:33:35,876 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-26 17:33:35,877 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-26 17:33:35,877 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-26 17:33:35,877 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-26 17:33:35,878 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-26 17:33:35,878 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-26 17:33:35,892 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-26 17:33:35,893 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-26 17:36:13,022 config INFO: Loaded configuration from C:\Users\Harsh Patel\Desktop\Projects\BackTester\config.yaml
+2026-06-26 17:36:13,023 __main__ INFO: Loaded configuration from config.yaml
+2026-06-26 17:36:13,023 __main__ INFO: Starting backtesting workflow for AAPL from 2020-01-01 to 2021-01-01
+2026-06-26 17:36:13,023 __main__ INFO: Using position sizing strategy: fixed_percentage
+2026-06-26 17:36:13,023 __main__ INFO: Initial cash: $100,000.00
+2026-06-26 17:36:13,023 __main__ INFO: Loading data...
+2026-06-26 17:36:15,675 DataLoader.dataLoader INFO: Loaded 253 rows for AAPL
+2026-06-26 17:36:15,675 __main__ INFO: Cleaning data...
+2026-06-26 17:36:15,679 __main__ INFO: Storing data...
+2026-06-26 17:36:15,681 DataStorage.dataStorage INFO: Initializing PostgreSQL connection pool: 1-5
+2026-06-26 17:36:15,905 __main__ ERROR: Backtesting workflow failed: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+Traceback (most recent call last):
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\main.py", line 57, in run_backtest
+    store_data(cleaned_data, ticker)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 202, in store_data
+    storage.store_data(data, ticker)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 158, in store_data
+    self.pool.initialize()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 44, in initialize
+    self.pool = pool.SimpleConnectionPool(
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.config.minconn,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        password=self.config.password,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Harsh Patel\AppData\Roaming\Python\Python314\site-packages\psycopg2\pool.py", line 59, in __init__
+    self._connect()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh Patel\AppData\Roaming\Python\Python314\site-packages\psycopg2\pool.py", line 63, in _connect
+    conn = psycopg2.connect(*self._args, **self._kwargs)
+  File "C:\Users\Harsh Patel\AppData\Roaming\Python\Python314\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-06-26 17:36:31,727 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-26 17:36:31,728 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-26 17:36:31,728 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-26 17:36:31,728 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-26 17:36:31,729 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-26 17:36:31,729 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-26 17:36:31,961 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-26 17:36:31,963 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-26 17:36:42,545 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-26 17:36:42,545 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-26 17:36:42,546 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-26 17:36:42,546 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-26 17:36:42,546 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-26 17:36:42,546 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-26 17:36:42,550 DataStorage.dataStorage WARNING: Database initialization failed for AAPL (continuing without storage): database unavailable
+Traceback (most recent call last):
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 159, in store_data
+    self.pool.initialize()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\tests\test_data_storage.py", line 10, in fail_initialize
+    raise RuntimeError("database unavailable")
+RuntimeError: database unavailable
+2026-06-26 17:36:42,566 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-26 17:36:42,567 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
+2026-06-26 17:36:47,829 config INFO: Loaded configuration from C:\Users\Harsh Patel\Desktop\Projects\BackTester\config.yaml
+2026-06-26 17:36:47,829 __main__ INFO: Loaded configuration from config.yaml
+2026-06-26 17:36:47,829 __main__ INFO: Starting backtesting workflow for AAPL from 2020-01-01 to 2021-01-01
+2026-06-26 17:36:47,829 __main__ INFO: Using position sizing strategy: fixed_percentage
+2026-06-26 17:36:47,829 __main__ INFO: Initial cash: $100,000.00
+2026-06-26 17:36:47,830 __main__ INFO: Loading data...
+2026-06-26 17:36:48,283 DataLoader.dataLoader INFO: Loaded 253 rows for AAPL
+2026-06-26 17:36:48,284 __main__ INFO: Cleaning data...
+2026-06-26 17:36:48,288 __main__ INFO: Storing data...
+2026-06-26 17:36:48,289 DataStorage.dataStorage INFO: Initializing PostgreSQL connection pool: 1-5
+2026-06-26 17:36:48,328 DataStorage.dataStorage WARNING: Database initialization failed for AAPL (continuing without storage): connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+Traceback (most recent call last):
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 159, in store_data
+    self.pool.initialize()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 44, in initialize
+    self.pool = pool.SimpleConnectionPool(
+                ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.config.minconn,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        password=self.config.password,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Harsh Patel\AppData\Roaming\Python\Python314\site-packages\psycopg2\pool.py", line 59, in __init__
+    self._connect()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh Patel\AppData\Roaming\Python\Python314\site-packages\psycopg2\pool.py", line 63, in _connect
+    conn = psycopg2.connect(*self._args, **self._kwargs)
+  File "C:\Users\Harsh Patel\AppData\Roaming\Python\Python314\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-06-26 17:36:48,330 __main__ INFO: Initialized strategy: moving_average_crossover
+2026-06-26 17:36:48,330 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=20 slow_window=50
+2026-06-26 17:36:48,332 BacktestingEngine.strategy INFO: Generated 147 buy signals and 57 sell signals
+2026-06-26 17:36:48,332 __main__ INFO: Generated 204 non-zero signals
+2026-06-26 17:36:48,332 BacktestingEngine.positionSizer INFO: Initialized FixedPercentagePositionSizer with 2.0% risk
+2026-06-26 17:36:48,332 __main__ INFO: Running backtest...
+2026-06-26 17:36:48,332 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100000, position_sizer=FixedPercentagePositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-26 17:36:48,332 BacktestingEngine.backtestEngine INFO: Starting backtest with 253 rows and initial cash 100000
+2026-06-26 17:36:48,340 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 129858.10, Trades executed: 11
+2026-06-26 17:36:48,340 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=29.86%, sharpe=2.62, max_dd=-10.94%, win_rate=72.73%
+2026-06-26 17:36:48,340 __main__ INFO: Backtest complete. Performance metrics:
+2026-06-26 17:36:48,341 __main__ INFO: Total Return: 29.86%
+2026-06-26 17:36:48,341 __main__ INFO: Sharpe Ratio: 2.62
+2026-06-26 17:36:48,341 __main__ INFO: Max Drawdown: -10.94%
+2026-06-26 17:36:48,341 __main__ INFO: Win Rate: 72.73%
+2026-06-26 17:36:48,341 __main__ INFO: Profit Factor: 3.80
+2026-06-26 17:36:48,341 __main__ INFO: Total Trades: 11
+2026-06-26 17:36:48,341 __main__ INFO: Performance summary:
+
+        ========== PERFORMANCE SUMMARY ==========
+        Total Return:        29.86%
+        Sharpe Ratio:         2.62
+        Max Drawdown:       -10.94%
+        Win Rate:            72.73%
+        Profit Factor:        3.80
+        Total Trades:           11
+        ========================================
+        
+2026-06-26 17:37:09,363 BacktestingEngine.positionSizer INFO: Initialized FixedSharesPositionSizer with 1 shares
+2026-06-26 17:37:09,363 BacktestingEngine.backtestEngine INFO: Initialized BacktestEngine: initial_cash=100.0, position_sizer=FixedSharesPositionSizer, commission=0.1%, slippage=0.05%, stop_loss=5.0%, take_profit=10.0%
+2026-06-26 17:37:09,363 BacktestingEngine.backtestEngine INFO: Starting backtest with 5 rows and initial cash 100.0
+2026-06-26 17:37:09,364 BacktestingEngine.backtestEngine INFO: Backtest complete. Final portfolio value: 101.96, Trades executed: 1
+2026-06-26 17:37:09,364 BacktestingEngine.performanceMetrics WARNING: No losing trades, profit factor undefined
+2026-06-26 17:37:09,364 BacktestingEngine.performanceMetrics INFO: Performance metrics calculated: return=1.96%, sharpe=15.54, max_dd=-0.02%, win_rate=100.00%
+2026-06-26 17:37:09,367 DataStorage.dataStorage WARNING: Database initialization failed for AAPL (continuing without storage): database unavailable
+Traceback (most recent call last):
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\DataStorage\dataStorage.py", line 159, in store_data
+    self.pool.initialize()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh Patel\Desktop\Projects\BackTester\tests\test_data_storage.py", line 10, in fail_initialize
+    raise RuntimeError("database unavailable")
+RuntimeError: database unavailable
+2026-06-26 17:37:09,388 BacktestingEngine.strategy INFO: Generating MA crossover signals with fast_window=2 slow_window=3
+2026-06-26 17:37:09,390 BacktestingEngine.strategy INFO: Generated 3 buy signals and 0 sell signals
